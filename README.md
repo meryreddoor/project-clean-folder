@@ -1,4 +1,4 @@
-# project-clean-folder
+# Project: Cleaning folders
 IRONHACK 
 
 ## Getting Started
