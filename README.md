@@ -1,5 +1,5 @@
 # Project: Cleaning folders
-IRONHACK 
+The purpose of this project is to analyze if the developed countries are suffering less shark attacks year after year.
 
 ## Getting Started
 
@@ -33,7 +33,14 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Relevant information about developed countries:
+
+Ratings Human Development Report: Values ranging from 0 to 1 (1=highest grade, 0=lowest grade). There are 4 groups:
+
+(“High Human Development”), with more than 0,80
+(“Medium Human Development”), from 0,70 to 0,80
+(“Medium Human Development”), from 0,50 to 0,70
+(“Low Human Development”), with less than 0,55
 
 ### Break down into end to end tests
 
@@ -57,9 +64,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [UNDP - Human Development Reports](http://hdr.undp.org/en/data#) - The web used to extract Human Development Report for all countries
+* [Economipedia - Definition](https://economipedia.com/definiciones/indice-desarrollo-humano.html) - Explanation of Human Development Report 
+* [Kaggle](https://www.kaggle.com/teajay/global-shark-attacks/version/1) - Information about Shak Attacks
 
 ## Contributing
 
