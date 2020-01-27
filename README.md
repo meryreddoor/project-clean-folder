@@ -50,9 +50,6 @@ Find listed below relevant information about developed countries:
 LAST STEP OF THE PROCESS.
 This two DataFrames have been merged in order to proceed with the analysis of the data.
 
-
-### Conclutions of the Data Analysis
-
 The TOP20 Developed Countries are listed with the total accumulated amount of Shark Attacks.
 
 With this data input, some of the countries with larger number of attacks have been plotted in order to perform individual analysis. This data apparentaly shows no correlation with the initial hypothesis, thus, a full trend with all the countries and years has been plotted to repeat the analysis.
