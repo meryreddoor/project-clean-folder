@@ -1,86 +1,75 @@
-# Project: Cleaning folders
-IRONHACK 
+# Project: Cleaning data and Analysis
+ 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The main purpose of this project is to determine if the is a correlation between Developed Countries and Shark Attacks.
+Furthermore, we expect to see a decreasing tendency in Shark Attacks.
 
-### Prerequisites
+In order to do so, databases need to be cleaned.
+The process is described below.
 
-What things you need to install the software and how to install them
+### Process
 
-```
-Give examples
-```
+FIRST DataFrame. 
+Table that contains the information for Shark Attacks;
+
+*Blank Spaces,
+*Empty cells,
+*Random numbers as Years,
+*Cities as Countries,
+*Geograohic Areas as Countries,
+
+Thus, some names of the countries have been re-named in order to standarize this list.
+
+The first part of the code will be used to clean all the unrelevant information that this dataframe contains for relevant columns (Year and Country). 
+
+SECOND DataFrame.
+Table that contains the information for Human Development Index;
+
+This table did not contain any of the above constraints.
+However, it contains:
+
+*Empty Columns.
+*Double header.
+*Remove irrelevant years and information.
+
+Furthermore, a column has been added in order to know the real status for each country. 
+Also, some names of the countries have been re-named in order to standarize this list.
+
+Find listed below relevant information about developed countries:
+
+*Ratings Human Development Report: Values ranging from 0 to 1 (1=highest grade, 0=lowest grade). There are 4 groups:
+
+(“High Human Development”), with more than 0,80
+(“Medium Human Development”), from 0,70 to 0,80
+(“Medium Human Development”), from 0,50 to 0,70
+(“Low Human Development”), with less than 0,55
+
+
+LAST STEP OF THE PROCESS.
+This two DataFrames have been merged in order to proceed with the analysis of the data.
+
+The TOP20 Developed Countries are listed with the total accumulated amount of Shark Attacks.
+
+With this data input, some of the countries with larger number of attacks have been plotted in order to perform individual analysis. This data apparentaly shows no correlation with the initial hypothesis, thus, a full trend with all the countries and years has been plotted to repeat the analysis.
+
+The new graph repeats the same behaviour, so we can conclude that there is no trend to confirm the initial hypothesis, as number of attacks seem to have no correlation with Developed Countries.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Importing the relevant libraries.
 
-Say what the step will be
+import pandas as pd
+import numpy as np
+import re
+import matplotlib
+import matplotlib.pyplot as plt
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
 * [UNDP - Human Development Reports](http://hdr.undp.org/en/data#) - The web used to extract Human Development Report for all countries
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Economipedia - Definition](https://economipedia.com/definiciones/indice-desarrollo-humano.html) - Explanation of Human Development Report 
+* [Kaggle](https://www.kaggle.com/teajay/global-shark-attacks/version/1) - Information about Shak Attacks
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
